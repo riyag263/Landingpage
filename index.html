@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="/landingpage/img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga omnis architecto vero quo earum minima
+                    eos delectus suscipit, cupiditate corporis esse natus harum sunt adipisci? Voluptatum ad totam
+                    corrupti aliquam quas cumque ducimus repellat deserunt iusto, natus ex quia aperiam!</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="/landingpage/img/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/landingpage/img/pepsi001.png"
+                    onclick="imgslider('/landingpage/img/pepsi001.png');changebgcolor('#0062be')"></li>
+            <li><img src="/landingpage/img/pepsi002.png"
+                    onclick="imgslider('/landingpage/img/pepsi002.png');changebgcolor('#e60c2c')"></li>
+            <li><img src="/landingpage/img/pepsi003.png"
+                    onclick="imgslider('/landingpage/img/pepsi003.png');changebgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="/landingpage/img/facebook.png"></a></li>
+            <li><a href="#"><img src="/landingpage/img/twitter.png"></a></li>
+            <li><a href="#"><img src="/landingpage/img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changebgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;;
+        }
+    </script>
+</body>
+
+</html>
